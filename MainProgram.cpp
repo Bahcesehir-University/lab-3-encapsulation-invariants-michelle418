@@ -37,7 +37,7 @@ public:
         
         if(celsius<-273.15)
         {
-            throw invalid_argument("must not be less then -273.15");
+            throw invalid_argument("must not be negative");
         }
         celsius_ = celsius;
         
