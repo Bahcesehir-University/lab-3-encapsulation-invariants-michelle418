@@ -35,7 +35,7 @@ public:
     explicit Temperature(double celsius) {
         // TODO: Validate and set celsius_
         
-        if(celsius<-273.15)
+        if(celsius_<-273.15)
         {
             throw invalid_argument("must not be negative");
         }
