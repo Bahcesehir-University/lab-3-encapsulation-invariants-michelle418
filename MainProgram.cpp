@@ -55,8 +55,8 @@ public:
     // Formula: F = C * 9/5 + 32
     double getFahrenheit() const {
         // TODO: Implement
-        double F= celsius_* 9.0/5.0 + 32.0;
-        return F;
+        return celsius_* 9.0/5.0 + 32.0;
+        
         //return 0.0;
     }
 
