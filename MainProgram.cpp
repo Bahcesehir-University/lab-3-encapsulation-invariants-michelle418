@@ -56,7 +56,8 @@ public:
     double getFahrenheit() const {
         // TODO: Implement
         return celsius_* 9.0/5.0 + 32.0;
-        
+
+        celsius_ = celsius;
         //return 0.0;
     }
 
@@ -69,7 +70,7 @@ public:
         {
             throw invalid_argument("Temperature cannot be below absolute 0(< -273.15)");
         }
-        
+        celsius_ = celsius;
     }
 };
 
