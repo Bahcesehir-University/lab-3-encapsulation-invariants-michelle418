@@ -94,12 +94,13 @@ public:
         // TODO: Validate and set members
         if(owner.empty())
         {
-             invalid_argument("Owner name cannot be empty");
+          
+            throw invalid_argument("Owner name cannot be empty");
             
         }
         if (initialBalance<0)
         {
-         invalid_argument  ("Initial balance cannot be negative");
+          throw invalid_argument  ("Initial balance cannot be negative");
         }
         owner_=owner;
         balance_=initialBalance;
@@ -154,7 +155,7 @@ public:
         // TODO: Implement using withdraw() and deposit()
         if(amount<=0)
         {
-            throw runtime_error("Transfer amount must be positive");
+            throw invalid_argument("Transfer amount must be positive");
         }
         withdraw(amount);
         other.deposit(amount);
