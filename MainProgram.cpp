@@ -70,7 +70,7 @@ public:
         {
             throw invalid_argument("Temperature cannot be below absolute 0(< -273.15)");
         }
-        
+        celsius_=celsius;
     }
 };
 
